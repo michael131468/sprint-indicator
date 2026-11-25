@@ -5,3 +5,6 @@
 
 # GJS syntax-check temp files
 *.check.mjs
+
+# Packaged extension uploads
+*.shell-extension.zip

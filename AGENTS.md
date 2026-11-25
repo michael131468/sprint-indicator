@@ -24,8 +24,8 @@ Do not "fix" these to match each other. Using the old path in `prefs.js`
 produces an `ImportError: … does not exist` and the settings dialog never
 opens (this shipped once; see commit f088d77).
 
-The prefs path means the settings dialog requires GNOME 49+, even though
-`metadata.json` declares 45+ for the indicator itself.
+The prefs path means the settings dialog requires GNOME 49+, so
+`metadata.json` declares 49+ for the extension as a whole.
 
 ## Reference material on this machine
 

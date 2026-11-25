@@ -2,6 +2,7 @@
     "uuid": "sprint-indicator@micho",
     "name": "Sprint Indicator",
     "description": "Shows the current sprint number and day in the top panel.",
-    "shell-version": ["45", "46", "47", "48", "49", "50", "51"],
+    "shell-version": ["49", "50", "51"],
+    "url": "https://github.com/michael131468/sprint-indicator",
     "settings-schema": "org.gnome.shell.extensions.sprint-indicator"
 }

@@ -3,7 +3,7 @@
 Shows the current sprint number and sprint progress in the GNOME Shell
 top bar.
 
-![GNOME Shell 45+](https://img.shields.io/badge/GNOME%20Shell-45%2B-blue)
+![GNOME Shell 49+](https://img.shields.io/badge/GNOME%20Shell-49%2B-blue)
 
 ## Screenshot
 
@@ -72,13 +72,11 @@ gsettings --schemadir "$DIR" set org.gnome.shell.extensions.sprint-indicator spr
 
 ## Compatibility notes
 
-- The indicator itself works on GNOME Shell 45 and newer.
-- The settings dialog requires **GNOME Shell 49+**: GNOME 49 moved the
-  `ExtensionPreferences` module to a new resource path
+- Requires **GNOME Shell 49+**. GNOME 49 moved the `ExtensionPreferences`
+  module to a new resource path
   (`resource:///org/gnome/Shell/Extensions/js/extensions/prefs.js`), and
-  `prefs.js` uses that path. On GNOME 45–48 the top bar indicator works,
-  but the settings dialog fails to load — configure via `gsettings`
-  instead (see above).
+  `prefs.js` uses that path, so the settings dialog does not load on
+  GNOME 45–48.
 
 ## Files
 
