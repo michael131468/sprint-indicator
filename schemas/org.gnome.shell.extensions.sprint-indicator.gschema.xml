@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+    <schema id="org.gnome.shell.extensions.sprint-indicator"
+            path="/org/gnome/shell/extensions/sprint-indicator/">
+        <key name="start-date" type="s">
+            <default>"2026-11-12"</default>
+            <summary>Start date of the first sprint</summary>
+            <description>Date in YYYY-MM-DD format on which the first sprint begins. Sprints are counted forward from this date in fixed blocks.</description>
+        </key>
+        <key name="sprint-length-weeks" type="i">
+            <range min="1" max="8"/>
+            <default>2</default>
+            <summary>Sprint length in weeks</summary>
+            <description>How long each sprint is, in weeks.</description>
+        </key>
+        <key name="first-sprint-number" type="i">
+            <range min="0" max="9999"/>
+            <default>140</default>
+            <summary>Sprint number at the start date</summary>
+            <description>The sprint number that the sprint starting on the start date has. Useful if your team is already on sprint 42.</description>
+        </key>
+        <key name="sprint-display" type="s">
+            <choices>
+                <choice value="day"/>
+                <choice value="bar"/>
+                <choice value="none"/>
+            </choices>
+            <default>"day"</default>
+            <summary>What to show next to the sprint number</summary>
+            <description>"day" shows a day counter (e.g. "Day 3/14"), "bar" shows a progress bar for the sprint, "none" shows only the sprint number.</description>
+        </key>
+    </schema>
+</schemalist>
